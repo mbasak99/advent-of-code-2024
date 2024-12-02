@@ -53,5 +53,19 @@ func main() {
 		sum += int(math.Abs(float64(leftArr[i] - rightArr[i])))
 	}
 	// fmt.Println()
-	fmt.Println(sum)
+	fmt.Println("Part One Sum: ", sum)
+
+	// part two
+	sum = 0
+	for _, num := range leftArr {
+		var occurrences = 0
+		for _, val := range rightArr {
+			if num == val {
+				occurrences++
+			}
+		}
+
+		sum += occurrences * num
+	}
+	fmt.Println("Part Two Sum: ", sum)
 }
