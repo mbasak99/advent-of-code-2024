@@ -83,7 +83,7 @@ func main() {
 	// xmasOccurs += vertical(charArr)
 	// xmasOccurs += diagonal(charArr)
 
-	fmt.Println(string(charArr[0][len(charArr[0])-len("XMAS") : len(charArr[0])]))
+	// fmt.Println(string(charArr[0][len(charArr[0])-len("XMAS") : len(charArr[0])]))
 	fmt.Println("Occurrences:", xmasOccurs)
 	fmt.Println("Time elapsed:", time.Since(start))
 }
